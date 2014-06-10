@@ -6,7 +6,7 @@
 # shell is started, Bash reads and executes commands from
 # ~/.bashrc, if that file exists."
 #
-# This file is also called from .bash_profile.
+# This file is also called (sourced) from .bash_profile.
 #
 # My philosophy is to keep it simple.
 # - The defaults on most systems are reasonable, but sometimes need
@@ -31,7 +31,7 @@ case "$TERM" in
 		### Set the prompt like "username@hostname:~ $"
 		# See: http://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
 		# And: http://mywiki.wooledge.org/BashFAQ/037
-		# 'tput bold' will work regardless of the foreground and background colors.
+		# 'tput bold' will work regardless of the foreground and background colors, unlike many fancy colored PS1 prompts.
 		# Place the tput output into variables, so they are only execd once.
 		bold=$(tput bold)
 		reset=$(tput sgr0)
