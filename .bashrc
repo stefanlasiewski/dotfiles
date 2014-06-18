@@ -35,7 +35,7 @@ case "$TERM" in
 		# Place the tput output into variables, so they are only execd once.
 		bold=$(tput bold)
 		reset=$(tput sgr0)
-		export PS1='\u@\[$bold\]\h\[$reset\]:\w \$ '
+		export PS1='\u@\[$bold\]\h\[$reset\]:\W \$ '
 	
 		### Set title in terminal emulator to match PS1.
 		# PROMPT_COMMAND is executed as a command prior to issuing each primary prompt.
@@ -57,7 +57,7 @@ case "$TERM" in
 		;;
 	*)
 		# For simpler terminals, use simpler features
-		export PS1="\u@\h:\w \$ "
+		export PS1="\u@\h:\W \$ "
 		;;
 esac
 
