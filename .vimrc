@@ -37,6 +37,7 @@ Plugin 'altercation/vim-colors-solarized'
 "" plugins from http://vim-scripts.org/vim/scripts.html
 "" DirDiff -- For effective diffing of directories within Vim
 Plugin 'DirDiff.vim'
+let g:DirDiffExcludes = "CVS,*.class,*.exe,.*.swp,.git" 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
