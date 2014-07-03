@@ -1,6 +1,6 @@
 " Stefan's .vimrc file, loosely based on ~stefanl/.exrc
 "
-" $Id: .vimrc 305 2014-05-17 15:23:35Z stefanl $ 
+" $Id: .vimrc 312 2014-06-23 18:13:59Z stefanl $ 
 
 """ Use Vundle -- Vim bundles
 " See https://github.com/gmarik/Vundle.vim/blob/master/README.md
@@ -8,7 +8,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -37,7 +37,7 @@ Plugin 'altercation/vim-colors-solarized'
 "" plugins from http://vim-scripts.org/vim/scripts.html
 "" DirDiff -- For effective diffing of directories within Vim
 Plugin 'DirDiff.vim'
-let g:DirDiffExcludes = "CVS,*.class,*.exe,.*.swp,.git" 
+let g:DirDiffExcludes = "CVS,*.class,*.exe,.*.swp,.git,Icon,.ducks" 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -60,8 +60,9 @@ filetype plugin indent on    " required
 """ Themes
 " I want a black background. This removes conflicting colors, such as 'Blue'
 "colorscheme ir_black
-colorscheme chocolate
-"set background=dark
+"colorscheme chocolate
+set background=dark
+colorscheme solarized
 
 """ tab and formatting options
 " I prefer to indent with spaces, not tabs. And I want shorter looking tabs.
