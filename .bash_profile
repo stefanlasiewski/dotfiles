@@ -5,7 +5,7 @@
 # ~/.bash_profile: Read when Bash is invoked as an interactive login shell,
 # after reading /etc/profile. This file typically calls ~/.bashrc . 
 #
-# $Id: .bash_profile 279 2013-11-26 05:53:08Z stefanl $ 
+# $Id: .bash_profile 311 2014-06-23 18:13:16Z stefanl $ 
 #
 ################################################################################
 
