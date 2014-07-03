@@ -17,7 +17,7 @@
 # - Commands in here should not echo to the screen, otherwise some
 # non-interactive commands may fail.
 #
-# $Id: .bashrc 279 2013-11-26 05:53:08Z stefanl $ 
+# $Id: .bashrc 311 2014-06-23 18:13:16Z stefanl $ 
 #
 #######################################################################
 
@@ -27,7 +27,7 @@
 ### Prompts and titlebars
 # TODO: Set PS1 based on hostname, superuser ability, etc.
 case "$TERM" in
-	xterm*|rxvt*|screen)
+	ansi|xterm*|rxvt*|screen)
 		### Set the prompt like "username@hostname:~ $"
 		# See: http://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
 		# And: http://mywiki.wooledge.org/BashFAQ/037
